@@ -71,28 +71,45 @@ form>button>i {
     padding-inline: 5px;
     font-size: 19px !important;
 }
+.main-row1,.main-row22{
+    width: 900px;
+    margin-inline: auto;
+}
 .main-row1{
     margin-top: 50px;
+}
+.main-row21{
+    margin-top:30px;
+}
+/* .main-row22{
+    position:relative;top:23px;
+} */
+.main-row1 ,.main-row21,.main-row22{
+   
     display: flex;
     align-items: center;
     justify-content: space-around;
     /* border-bottom: 1px solid white;
     margin-inline: 100px; */
 }
-.main-row1 p{
+
+.main-row1 p,.main-row21 p,.main-row22 p{
     font-size: 16px;
     font-weight: 700;
-    line-height: 17px;
+    /* line-height: 17px; */
     display: inline-block;
 }
-.main-row1>p:first-child{
+.main-row1>p:first-child,.main-row21>p:first-child
+,.main-row22>p:first-child{
     color: rgba(30, 111, 159, 1);
 }
-.main-row1>p:last-child{
+.main-row1>p:last-child, .main-row21>p:last-child
+,.main-row22>p:last-child{
     color:rgba(130, 132, 250, 1);
     
 }
-.main-row1 p span {
+.main-row1 p span, .main-row21  p span
+,.main-row22 p span{
     display: inline-block;
     width: 20px; /* Adjust the width of the circle */
     height: 20px; /* Adjust the height of the circle */
@@ -105,26 +122,33 @@ form>button>i {
 }
 
 .main-row2 {
-    margin-block: 10px;
+    /* margin-block: 10px; */
     margin-inline: auto;
     border-top: 1px solid rgba(51, 51, 51, 1);
     width: 900px;
-    height: 400px;
+    /* height: 300px; */
     border-bottom: 1px solid rgba(51, 51, 51, 1);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    box-sizing: border-box;
+    
 }
-.empty{
-    display:flex;
+.empty {
+    display: flex;
     flex-direction: column;
-   
+    align-items: center;
+    justify-content: space-between;
+    margin-block-start: 60px; /* Adjust this as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 300px; /* Set a maximum height for the scrollable area */
 }
-.empty p{
-font-size: 16px;
-font-weight: 700;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: center;
-color:rgba(128, 128, 128, 1);
 
+.empty p {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(128, 128, 128, 1);
+    margin-block: 30px;
 }
